@@ -1,0 +1,1 @@
+[22-Feb-2023 06:35:31 UTC] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home2/optometrynepal/demo.optometrynepal.org/storage/framework/views/451ec92570c61e440622fd56c52e2b42.php on line 6
