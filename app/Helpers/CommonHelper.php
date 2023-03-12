@@ -17,7 +17,9 @@ class CommonHelper
 
     function getAllMenu()
     {
-        return Menu::orderBy('order', 'asc')->get();
+        return Menu::orderBy('order', 'asc')
+            ->where('is_active', 1)
+            ->get();
     }
 
     public function getAllEventsData()

@@ -4,6 +4,7 @@
         <div class="row">
             <div class="col-md-12 mb-5">
                 <h1> Details</h1>
+                <hr>
             </div>
         </div>
         <div class="row">

@@ -24,7 +24,15 @@ class LoginController extends Controller
             $email = $request->email;
             $password = $request->password;
             if (Auth::guard('web')->attempt(['email' => $email, 'password' => $password])) {
-                return redirect()->route('member-dashboard');
+                $user = Auth::guard('web')->user();
+                if (
+                    isset($user->account_status)
+                    && $user->account_status === "active"
+                ) {
+                    return redirect()->route('member-dashboard');
+                } else {
+                    return redirect()->back()->with('error', 'Your account is not active yet. Please contact with admin.');
+                }
             } else {
                 return redirect()->back()->with('error', 'Invalid credentials');
             }

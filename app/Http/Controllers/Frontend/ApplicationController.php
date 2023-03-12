@@ -7,6 +7,7 @@ use App\Models\About\About;
 use App\Models\Activities\Activities;
 use App\Models\Events\Events;
 use App\Models\Awards\Awards;
+use App\Models\Awards\RegisterTravelGrant;
 use App\Models\Conference\Conference;
 use App\Models\FRAF\FRAF;
 use App\Models\Gallery\Gallery;
@@ -14,6 +15,7 @@ use App\Models\News\News;
 use App\Models\Project\Project;
 use App\Models\Publications\Publications;
 use App\Models\Rewards\Rewards;
+use App\Models\User\User;
 use Illuminate\Http\Request;
 
 class ApplicationController extends Controller
@@ -24,6 +26,37 @@ class ApplicationController extends Controller
         return view('frontend.auth.register');
     }
 
+    public function findOptometrists(Request $request)
+    {
+        $criteria = $request->criteria;
+        $optometrists = User::with(["profile"])
+            ->where('account_status', 'active')
+            ->get();
+
+        if (!empty($criteria)) {
+            $optometrists = User::with(["profile"])
+                ->where("name", "like", "%{$criteria}%")
+                ->where('account_status', 'active')
+                ->get();
+        }
+
+        return view('frontend.pages.optometrist.index', compact('optometrists'));
+    }
+
+    public function filteredOptometrists(Request $request)
+    {
+        $request->validate([
+            'name' => 'required|string|min:3',
+        ]);
+
+        $name = $request->name;
+        $optometrists = User::with(["profile"])
+            ->where("name", "like", "%{$name}%")
+            ->where('account_status', 'active')
+            ->get();
+
+        return view('frontend.pages.optometrist.index', compact('optometrists'));
+    }
 
     public function aboutUs(Request $request)
     {
@@ -56,7 +89,7 @@ class ApplicationController extends Controller
         }
 
     }
-    
+
     public function eventsList(Request $request)
     {
         $criteria = $request->criteria;
@@ -74,7 +107,8 @@ class ApplicationController extends Controller
         $criteria = $request->criteria;
         if (!empty($criteria)) {
             $awardsData = Awards::where('slug', $criteria)->first();
-            return view('frontend.pages.awards.details', compact('awardsData'));
+            $relatedAwards = Awards::where('slug', '!=', $criteria)->get();
+            return view('frontend.pages.awards.details', compact('awardsData', 'relatedAwards'));
         } else {
             $awardsData = Awards::all();
             return view('frontend.pages.awards.index', compact('awardsData'));
@@ -131,7 +165,7 @@ class ApplicationController extends Controller
             $relatedData = Conference::where('slug', '!=', $criteria)->get();
             return view('frontend.pages.conference.details', compact('frfData', 'relatedData'));
         } else {
-            $frfData = Conference::all();
+            $frfData = Conference::orderBy('date','asc')->get();
             return view('frontend.pages.conference.index', compact('frfData'));
         }
 
@@ -151,10 +185,26 @@ class ApplicationController extends Controller
 
     public function galleryList(Request $request)
     {
-
         $galleryData = Gallery::all();
         return view('frontend.pages.gallery.index', compact('galleryData'));
+    }
 
+    public function storeAwardGrant(Request $request)
+    {
+        $storeData = $this->validate($request, [
+            'reason' => 'string|sometimes|nullable',
+            'date' => 'date|sometimes|nullable',
+            'venue' => 'string|sometimes|nullable',
+            'expected_grant' => 'string|sometimes|nullable',
+            'membership_number' => 'integer|required',
+            'grant_status' => 'string|sometimes|nullable',
+        ]);
 
+        $awardGrant = RegisterTravelGrant::create($storeData);
+        if ($awardGrant) {
+            return redirect()->back()->with('success', 'Your application has been submitted successfully.');
+        } else {
+            return redirect()->back()->with('error', 'Something went wrong. Please try again.');
+        }
     }
 }

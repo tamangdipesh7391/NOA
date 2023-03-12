@@ -12,6 +12,13 @@ Route::get('/', function () {
     return view('frontend.pages.home.home');
 })->name('index');
 
+Route::get('/optometrists', [ApplicationController::class, 'findOptometrists'])
+    ->name('optometrists.list');
+Route::get('/optometrists/{criteria?}', [ApplicationController::class, 'findOptometrists'])
+    ->name('optometrists');
+Route::post('/optometrists', [ApplicationController::class, 'filteredOptometrists'])
+    ->name('searchOptometrists');
+
 
 Route::group(['prefix' => 'about-us'], function () {
     Route::get('/{criteria?}', [ApplicationController::class, 'aboutUs'])->name('about-us');
@@ -21,6 +28,7 @@ Route::group(['prefix' => 'our-projects'], function () {
     Route::get('/{criteria?}', [ApplicationController::class, 'ourProjects'])->name('our-projects');
 });
 Route::group(['prefix' => 'awards'], function () {
+    Route::post('/apply-for-travel-grant', [ApplicationController::class, 'storeAwardGrant'])->name('apply-for-travel-grant');
     Route::get('/{criteria?}', [ApplicationController::class, 'awardsList'])->name('awards');
 });
 
@@ -79,5 +87,3 @@ Route::group(['prefix' => 'member-dashboard', 'middleware' => 'auth'], function 
     Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 
 });
-
-

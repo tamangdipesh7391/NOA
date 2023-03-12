@@ -3,6 +3,7 @@
 namespace App\Models\Menu;
 
 use App\Models\About\About;
+use App\Models\Awards\Awards;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -31,9 +32,13 @@ class Menu extends Model
         return $this->hasMany(Menu::class, 'parent_id', 'id');
     }
 
-
     public function subAboutMenu()
     {
         return $this->hasMany(About::class, 'menu_id', 'id');
+    }
+
+    public function subAwardMenu()
+    {
+        return $this->hasMany(Awards::class, 'menu_id', 'id');
     }
 }

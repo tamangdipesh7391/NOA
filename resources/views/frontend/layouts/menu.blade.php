@@ -1,4 +1,7 @@
 <?php
+
+use App\Facades\CommonHelper;
+
 $menuData = CommonHelper::getAllMenu();
 ?>
 
@@ -21,7 +24,14 @@ $menuData = CommonHelper::getAllMenu();
                 @elseif($menu->slug=='our-projects')
                     <li><a href="{{url('our-projects')}}">{{$menu->name}}</a></li>
                 @elseif($menu->slug=='awards')
-                    <li><a href="{{url('awards')}}">{{$menu->name}}</a></li>
+                    <li><a href="#">{{$menu->name}}</a>
+                        <ul>
+                            @foreach($menu->subAwardMenu as $subMenu)
+                                <li><a href="{{route('awards').'/'.$subMenu->slug}}">{{$subMenu->title}}</a></li>
+                            @endforeach
+                        </ul>
+                    </li>
+                    <!-- <li><a href="{{url('awards')}}">{{$menu->name}}</a></li> -->
                 @elseif($menu->slug=='conference')
                     <li><a href="{{url('conference')}}">{{$menu->name}}</a></li>
 

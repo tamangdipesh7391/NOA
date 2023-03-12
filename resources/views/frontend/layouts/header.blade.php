@@ -38,7 +38,7 @@
             <div class="col-md-6">
                 <div class="col-md-12">
                     <ul class="top-right-section">
-                        <li class="find-optometrists"><a href="">Find Optometrists</a></li>
+                        <li class="find-optometrists"><a href="{{route('optometrists.list')}}">Find Optometrists</a></li>
                         <li class="join-nao"><a href="{{route('register.step.one')}}">Join NAO</a></li>
                         <li class="member-login"><a href="{{route('login')}}">Member Login</a></li>
                     </ul>
