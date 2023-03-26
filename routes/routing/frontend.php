@@ -85,5 +85,6 @@ Route::group(['prefix' => 'member-dashboard', 'middleware' => 'auth'], function 
     Route::any('member-id-card', [MemberDashboardController::class, 'memberIdCard'])->name('member-id-card');
     Route::any('update-member-voucher', [MemberDashboardController::class, 'updateVoucher'])->name('update-member-voucher');
     Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
-
+    Route::get('/forgot-password', [LoginController::class, 'forgotPassword'])->name('reset-password');
+    Route::post('/forgot-password', [LoginController::class, 'forgotPassword'])->name('reset-password');
 });

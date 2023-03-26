@@ -30,6 +30,7 @@
                     <div class="form-group mb-3">
                         <button class="btn btn-success">
                             Login</button>
+                            <!-- <a href="{{route('reset-password')}}">forget password? click here</a> -->
                     </div>
 
 

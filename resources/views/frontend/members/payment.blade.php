@@ -7,6 +7,25 @@
 
             <div class="row">
                 <div class="col-md-12">
+                    <!-- session  -->
+                    @if (session('success'))
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            <strong>Success!</strong> {{session('success')}}
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    @endif
+                    @if (session('error'))
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            <strong>Error!</strong> {{session('error')}}
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    @endif
+                </div>
+                <div class="col-md-12">
                     <div class="x_panel">
                         <div class="x_title">
                             <h2>
@@ -56,13 +75,16 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-3">
-                                    @if(Auth::guard('web')->user()->voucher_file)
-                                        <img src="{{url(Auth::guard('web')->user()->voucher_file)}}"
-                                             alt="admin"
+                                    @if(Auth::guard('web')->user()->voucher_file === "commented")
+                                    <?php
+                                        $path = Auth::guard('web')->user()->voucher_file;
+                                        $fullPath = ($path) ? asset('storage/app/').$path : "";
+                                    ?>
+                                        <img src="{{ asset('storage/app/'.$path) }}"
+                                             alt="admin" download
                                              class="img-fluid">
-
                                         <hr>
-                                        <a href="{{url(Auth::guard('web')->user()->voucher_file)}}" download>
+                                        <a href="{{ asset('storage/app/'.$path) }}" download>
                                             Download
                                         </a>
                                     @endif

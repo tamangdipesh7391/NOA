@@ -324,6 +324,7 @@
                     <i class="bi bi-map"></i> Gallery</a>
             </li>
 
+
             <li class="nav-item">
                 <a href="{{route('admin-partners.index')}}" class="nav-link">
                     <i class="fa fa-users"></i> Partners</a>

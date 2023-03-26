@@ -18,6 +18,13 @@ Route::group(['namespace' => 'Backend', 'prefix' => 'admin-login'], function () 
 
 
 Route::group(['namespace' => 'Backend', 'prefix' => 'company-backend', 'middleware' => 'auth:admin'], function () {
+    Route::post('voucher-status', [DashboardController::class, 'voucherStatus'])->name('voucher-status');
+    Route::get('certificate-error', function () {
+        return view('frontend.members.home');
+    })->name('certificate-error');
+    Route::get('id-card-error', function () {
+        return view('frontend.members.home');
+    })->name('id-card-error');
     Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
     Route::resource('college-admin', "\App\Http\Controllers\Backend\Admin\AdminController");
      Route::any('admin-logout', [AdminLoginController::class, 'logout'])->name('admin-logout');

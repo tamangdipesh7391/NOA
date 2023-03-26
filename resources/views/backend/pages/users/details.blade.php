@@ -224,6 +224,12 @@
                                     </button>
                                 </li>
 
+                                <li class="nav-item">
+                                    <button class="nav-link" data-bs-toggle="tab"
+                                            data-bs-target="#payment-voucher">Voucher
+                                    </button>
+                                </li>
+
                             </ul>
                             <div class="tab-content pt-2">
 
@@ -390,6 +396,38 @@
 
                                 </div>
 
+                                <div class="tab-pane fade pt-3" id="payment-voucher">
+                                    <!-- Change Password Form -->
+                                    <form method="post" action="{{route('voucher-status')}}">
+                                        @csrf
+                                        <input hidden name="id" value="{{$userData->id}}">
+                                        <div class=" mb-3">
+                                            <label for="currentPassword" class="col-md-4 col-lg-3 col-form-label">Voucher Status</label>
+                                            <select name="voucher_status" id="" class="form-control">
+                                                <option value="pending" <?php
+                                                if ($userData->voucher_status == 'pending')
+                                                    echo 'selected';
+                                                ?>
+                                                >Pending</option>
+                                                <option value="approved" <?php
+                                                if ($userData->voucher_status == 'approved')
+                                                    echo 'selected';
+                                                ?>
+                                                >Approved</option>
+                                                <option value="rejected" <?php
+                                                if ($userData->voucher_status == 'rejected')
+                                                    echo 'selected';
+                                                ?>
+                                                >Rejected</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="text-center">
+                                            <button type="submit" class="btn btn-primary">Change voucher status</button>
+                                        </div>
+                                    </form><!-- End Change Password Form -->
+
+                                </div>
                             </div><!-- End Bordered Tabs -->
 
                         </div>

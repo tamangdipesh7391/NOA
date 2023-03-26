@@ -12,6 +12,7 @@ use App\Models\User\UserAddress;
 use App\Models\User\UserDocuments;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
 use PDF;
 
 class MemberDashboardController extends FrontendController
@@ -59,6 +60,21 @@ class MemberDashboardController extends FrontendController
         $id = Auth::guard('web')->user()->id;
         $user = User::find($id);
         $this->data('userData', $user);
+        $certificateInfo = [
+            "name" => $user->name ?? null,
+            "address" => $user->userAddress->pDistrict->district_name ?? null,
+            "membership_type" => $user->memberType->type ?? null,
+            "date_of_registration" => $user->date_of_registration ?? null,
+            "qualification" => $user->userDocuments->qualification ?? null,
+            "citizenship" => $user->userDocuments->citizenship_no ?? null,
+            "graduation_year" => $user->userDocuments->year_of_graduation ?? null,
+            "university" => $user->userDocuments->university ?? null,
+        ];
+        foreach ($certificateInfo as $key => $value) {
+            if ($value == null) {
+                return redirect()->route('certificate-error')->with('error', 'Please fill up all the information');
+            }
+        }
 //        return view($this->frontendPath . 'members.certificate', $this->data);
         $pdf = PDF::loadView($this->frontendPath . 'members.certificate', $this->data);
         return $pdf->download('member-certificate.pdf');
@@ -70,6 +86,21 @@ class MemberDashboardController extends FrontendController
         $id = Auth::guard('web')->user()->id;
         $user = User::find($id);
         $this->data('userData', $user);
+        $idCardInfo = [
+            "id" => $user->id ?? null,
+            "name" => $user->name ?? null,
+            "membership_type" => $user->memberType->type ?? null,
+            "expiry_date" => $user->isExpired() ?? null,
+            "citizenship" => $user->userDocuments->citizenship_no ?? null,
+            "phone" => $user->phone ?? null,
+            "address" => $user->userAddress->pDistrict->district_name ?? null,
+
+        ];
+        foreach ($idCardInfo as $key => $value) {
+            if ($value == null) {
+                return redirect()->route('id-card-error')->with('error', 'Please fill up all the information');
+            }
+        }
 //        return view($this->frontendPath . 'members.id-card', $this->data);
         $pdf = PDF::loadView($this->frontendPath . 'members.id-card', $this->data);
         return $pdf->download('member-id-card.pdf');
@@ -87,11 +118,14 @@ class MemberDashboardController extends FrontendController
             ]);
             $findUser = Auth::guard('web')->user();
             $this->deleteFile($findUser->voucher_file);
-            $fileName = $this->customFileUpload('uploads/users/voucher');
+            $fileName = $request->file('voucher')->store('public/users/voucher');
+            // $fileName = $this->customFileUpload('uploads/users/voucher');
+            // $fileName = Storage::disk('public')->put('uploads/users/voucher', $request->file('voucher'));
             $findUser->voucher_file = $fileName;
             $findUser->account_status = 'active';
+            $findUser->voucher_status = 'pending';
             $findUser->save();
-            return redirect()->back()->with('success', 'Payment successful');
+            return redirect()->back()->with('success', 'Your voucher has been uploaded successfully. Please wait for the admin to verify your voucher.');
         }
         return redirect()->back();
     }

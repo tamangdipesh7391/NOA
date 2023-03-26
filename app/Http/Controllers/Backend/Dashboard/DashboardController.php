@@ -26,4 +26,14 @@ class DashboardController extends BackendController
         $this->data('userData', User::findOrFail($id));
         return view($this->pagePath . 'users.details', $this->data);
     }
+
+    public function voucherStatus(Request $request)
+    {
+        $id = $request->id;
+        $status = $request->voucher_status;
+        $user = User::findOrFail($id);
+        $user->voucher_status = $status;
+        $user->save();
+        return redirect()->back()->with('success', 'Status Updated Successfully');
+    }
 }
