@@ -228,6 +228,8 @@ class MemberDashboardController extends FrontendController
         if ($request->isMethod('post')) {
 
             $this->validate($request, [
+                "front_size" => "required|mimes:jpeg,jpg,png,|max:1000",
+                "back_size" => "required|mimes:jpeg,jpg,png,|max:1000",
                 'citizenship_no' => 'required',
                 'qualification' => 'required',
                 'year_of_graduation' => 'required',
