@@ -75,6 +75,7 @@ Route::group(['namespace' => 'Backend', 'prefix' => 'company-backend', 'middlewa
     Route::post('ckeditor-image-upload', [CkeditorController::class, 'index'])->name('ckeditor-image-upload');
 
     Route::any('register-user-list', [DashboardController::class, 'registerUserList'])->name('register-user-list');
+    Route::post('change-user-status', [DashboardController::class, 'changeUserStatus'])->name('change-user-status');
     Route::any('register-user-list-details/{criteria}', [DashboardController::class, 'registerUserListDetails'])->name('register-user-list-details');
 
     /*

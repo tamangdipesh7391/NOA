@@ -36,4 +36,18 @@ class DashboardController extends BackendController
         $user->save();
         return redirect()->back()->with('success', 'Status Updated Successfully');
     }
+
+    public function changeUserStatus(Request $request)
+    {
+        if (!$request->user_id || !$request->status) {
+            return redirect()->back()->with('error', 'Please Select User and Status');
+        }
+
+        $userId = $request->user_id;
+        $status = $request->status;
+        $user = User::findOrFail($userId);
+        $user->account_status = $status;
+        $user->update();
+        return "Account Status Updated Successfully";
+    }
 }

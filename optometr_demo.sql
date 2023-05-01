@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Mar 02, 2023 at 05:53 PM
+-- Generation Time: May 01, 2023 at 07:17 PM
 -- Server version: 5.7.23-23
 -- PHP Version: 7.4.33
 
@@ -48,11 +48,11 @@ CREATE TABLE `abouts` (
 --
 
 INSERT INTO `abouts` (`id`, `menu_id`, `title`, `slug`, `status`, `meta_title`, `meta_description`, `intro_text`, `description`, `image`, `created_at`, `updated_at`) VALUES
-(7, 2, 'Message from the President and Secretary', 'message-from-the-president-and-secretary', 1, 'Message from the President and Secretary', 'Message from the President and Secretary', NULL, '<p>Message from the President and Secretary</p>', NULL, '2023-02-21 16:23:41', '2023-02-21 16:23:41'),
+(7, 2, 'Message from the President and Secretary', 'message-from-the-president-and-secretary', 1, 'Message from the President and Secretary', 'Message from the President and Secretary', NULL, '<p>Message from the President and Secretary&nbsp;</p>\r\n\r\n<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>', 'uploads/about/cbb2e705d19c99e41e04ac279fdddcca.jpg', '2023-02-21 16:23:41', '2023-05-01 02:11:33'),
 (8, 2, 'Current Executive Committee', 'current-executive-committee', 1, 'Current Executive Committee of NAO', 'Current Executive Committee of NAO', NULL, '<p><strong>Eighth committee:</strong></p>\r\n\r\n<table border=\"0\" cellpadding=\"10\" cellspacing=\"10\" style=\"width:100%\">\r\n	<tbody>\r\n		<tr>\r\n			<td>\r\n			<p style=\"text-align:center\"><img alt=\"Niraj Dev Joshi\" src=\"http://demo.optometrynepal.org/uploads/ckeditor-image/4957287dc1831fc3c6f31d09187a2c77.jpg\" /></p>\r\n\r\n			<p style=\"text-align:center\"><strong>President</strong><br />\r\n			Niraj Dev Joshi<br />\r\n			nirajdevjoshi@gmail.com</p>\r\n			</td>\r\n			<td style=\"text-align:center\">\r\n			<p><strong>Vice President</strong><br />\r\n			Raju Kaiti</p>\r\n			</td>\r\n			<td>\r\n			<p style=\"text-align:center\"><strong>Secretary</strong><br />\r\n			Deepak Kumar Sah&nbsp;</p>\r\n			</td>\r\n			<td style=\"text-align:center\">\r\n			<p style=\"text-align:center\"><img alt=\"Mukesh Kumar Jha\" src=\"http://demo.optometrynepal.org/uploads/ckeditor-image/464175f046be4f8e4afbaf0e52caaaea.jpg\" /></p>\r\n\r\n			<p style=\"text-align:center\"><strong>Joint Secretary&nbsp;</strong><br />\r\n			Mukesh Kumar Sah</p>\r\n			</td>\r\n			<td style=\"text-align:center\">\r\n			<p style=\"text-align:center\"><img alt=\"Junu Shrestha\" src=\"http://demo.optometrynepal.org/uploads/ckeditor-image/b224eacf21eee1af01de588709aebb9e.jpg\" /></p>\r\n\r\n			<p style=\"text-align:center\"><strong>Treasurer&nbsp;</strong><br />\r\n			Junu Shrestha<br />\r\n			shresthajunoo@gmail.com</p>\r\n			</td>\r\n		</tr>\r\n	</tbody>\r\n</table>\r\n\r\n<h3>Members:</h3>\r\n\r\n<table border=\"0\" cellpadding=\"10\" cellspacing=\"10\" style=\"width:100%\">\r\n	<tbody>\r\n		<tr>\r\n			<td style=\"text-align:center\">\r\n			<p><img alt=\"Binesh Gautam\" src=\"http://demo.optometrynepal.org/uploads/ckeditor-image/90dffddb04829e7814d2cf06de9beb13.jpg\" style=\"height:200px; width:200px\" /></p>\r\n\r\n			<p>Binesh Gautam<br />\r\n			alwaysbg@gmail.com</p>\r\n			</td>\r\n			<td style=\"text-align:center\">\r\n			<p><img alt=\"Krishna Kumar Dhankhoti\" src=\"http://demo.optometrynepal.org/uploads/ckeditor-image/8798bb93b36d9176c4cd882b500b5011.jpg\" style=\"height:200px; width:200px\" /></p>\r\n\r\n			<p>Krishna Kumar Dhankhoti<br />\r\n			ky558746@gmail.com</p>\r\n			</td>\r\n			<td style=\"text-align:center\">\r\n			<p><img alt=\"Monika Mandal\" src=\"http://demo.optometrynepal.org/uploads/ckeditor-image/91a9909cbcbb148755dfd1c67ac445d5.jpg\" style=\"height:200px; width:200px\" /></p>\r\n\r\n			<p>Monika Mandal<br />\r\n			monika.opto@gmail.com</p>\r\n			</td>\r\n			<td style=\"text-align:center\">\r\n			<p><img alt=\"Puspa Khadka\" src=\"http://demo.optometrynepal.org/uploads/ckeditor-image/d66ddbb2cad47a46c8b2838f4dd1512c.jpg\" style=\"height:200px; width:200px\" /></p>\r\n\r\n			<p>Puspa Khadka<br />\r\n			pusakhadka@gmail.com</p>\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td style=\"text-align:center\">\r\n			<p><img alt=\"Jay sundar Sunrait\" src=\"http://demo.optometrynepal.org/uploads/ckeditor-image/27752667f9aebc86750fab43530c7cba.jpg\" style=\"height:200px; width:200px\" /></p>\r\n\r\n			<p>Jay sundar Sunrait<br />\r\n			jaysundar.vision@gmail.com</p>\r\n			</td>\r\n			<td style=\"text-align:center\">\r\n			<p><img alt=\"Niranjan Sharan\" src=\"http://demo.optometrynepal.org/uploads/ckeditor-image/94e54749edee7157f73e1f1fe673de53.jpg\" style=\"height:200px; width:200px\" /></p>\r\n\r\n			<p>Niranjan Sharan<br />\r\n			niranjansharan09@gmail.com</p>\r\n			</td>\r\n			<td style=\"text-align:center\">\r\n			<p><img alt=\"Stuti Acharya\" src=\"http://demo.optometrynepal.org/uploads/ckeditor-image/42975b3eb6a5bcc41e26764d2e96d333.jpg\" style=\"height:200px; width:200px\" /></p>\r\n\r\n			<p>Monika Mandal<br />\r\n			monika.opto@gmail.com</p>\r\n			</td>\r\n			<td style=\"text-align:center\">Suraj chhetri</td>\r\n		</tr>\r\n	</tbody>\r\n</table>\r\n\r\n<p>&nbsp;</p>', NULL, '2023-02-21 16:24:49', '2023-02-21 17:12:21'),
 (9, 2, 'Past Executive Committee', 'past-executive-committee', 1, 'Past Executive Committee of NAO', 'Past Executive Committee of NAO', NULL, '<table border=\"0\" cellpadding=\"10\" cellspacing=\"10\" style=\"width:100%\">\r\n	<tbody>\r\n		<tr>\r\n			<td>\r\n			<p style=\"text-align:center\"><img alt=\"Niraj Dev Joshi\" src=\"http://demo.optometrynepal.org/uploads/ckeditor-image/4957287dc1831fc3c6f31d09187a2c77.jpg\" /></p>\r\n\r\n			<p style=\"text-align:center\"><strong>President</strong><br />\r\n			Niraj Dev Joshi</p>\r\n			</td>\r\n			<td style=\"text-align:center\">\r\n			<p><img alt=\"Prithvi Thapaliya\" src=\"http://demo.optometrynepal.org/uploads/ckeditor-image/cd29e9ba3f37351c349975827ddd594c.jpg\" /></p>\r\n\r\n			<p><strong>Vice President</strong><br />\r\n			Prithvi Thapaliya</p>\r\n			</td>\r\n			<td>\r\n			<p style=\"text-align:center\"><img alt=\"Gyan Bahadur Basnet\" src=\"http://demo.optometrynepal.org/uploads/ckeditor-image/f25beffaee680790d0962f830fd36a84.jpg\" /></p>\r\n\r\n			<p style=\"text-align:center\"><strong>Secretary</strong><br />\r\n			Gyan Bdr. Basnet&nbsp;</p>\r\n			</td>\r\n			<td style=\"text-align:center\">\r\n			<p style=\"text-align:center\"><img alt=\"Mukesh Kumar Jha\" src=\"http://demo.optometrynepal.org/uploads/ckeditor-image/53f314c3ea67199d0d9859c0157d3405.jpg\" /></p>\r\n\r\n			<p style=\"text-align:center\"><strong>Joint Secretary</strong><br />\r\n			Mukesh Kumar Jha</p>\r\n			</td>\r\n			<td style=\"text-align:center\">\r\n			<p style=\"text-align:center\"><img alt=\"Junu Shrestha\" src=\"http://demo.optometrynepal.org/uploads/ckeditor-image/b224eacf21eee1af01de588709aebb9e.jpg\" /></p>\r\n\r\n			<p style=\"text-align:center\"><strong>Treasurer</strong><br />\r\n			Junu Shrestha</p>\r\n			</td>\r\n		</tr>\r\n	</tbody>\r\n</table>\r\n\r\n<h3>Members:</h3>\r\n\r\n<table border=\"0\" cellpadding=\"10\" cellspacing=\"10\" style=\"width:100%\">\r\n	<tbody>\r\n		<tr>\r\n			<td style=\"text-align:center\">\r\n			<p><img alt=\"Amit KC\" src=\"http://demo.optometrynepal.org/uploads/ckeditor-image/c1a290c89a5ac07b6dc8a22d93b2bc98.jpg\" /></p>\r\n\r\n			<p>Amit K.C</p>\r\n			</td>\r\n			<td style=\"text-align:center\">\r\n			<p><img alt=\"Panjak Ray Adhikari\" src=\"http://demo.optometrynepal.org/uploads/ckeditor-image/f6bf45627dc0b7bfdc73d44a67770040.jpg\" /></p>\r\n\r\n			<p>Pankaj Ray Adhikari</p>\r\n			</td>\r\n			<td style=\"text-align:center\">\r\n			<p><img alt=\"Prateeva Devkota\" src=\"http://demo.optometrynepal.org/uploads/ckeditor-image/d1682a832b815ced3d1ac934e507b6e1.jpg\" /></p>\r\n\r\n			<p>Prateeva Devkota</p>\r\n			</td>\r\n			<td style=\"text-align:center\">\r\n			<p><img alt=\"Hira Nath Dahal\" src=\"http://demo.optometrynepal.org/uploads/ckeditor-image/3667bf40e50d0a65ce5e772167725307.jpg\" /></p>\r\n\r\n			<p>Hira Nath Dahal</p>\r\n			</td>\r\n		</tr>\r\n	</tbody>\r\n</table>', NULL, '2023-02-21 16:38:05', '2023-02-21 16:52:48'),
 (10, 2, 'Provincial Committee', 'provincial-committee', 1, 'Provincial Committee of NAO', 'Provincial Committee of NAO', NULL, '<p>Provincial Committee of NAO</p>', NULL, '2023-02-21 17:13:07', '2023-02-21 17:13:07'),
-(11, 2, 'About Optometry', 'about-optometry', 1, 'About Nepalese Association of Optometrist', NULL, NULL, '<p><strong>History:</strong></p>\r\n\r\n<p>Established in 2004, the Nepalese Association of Optometrists (NAO) is a not for profit national non government organization formed by the professionals in optometry from Nepal.</p>\r\n\r\n<p><strong>Registration:</strong></p>\r\n\r\n<p>The association is formally registered to the chief district office of the government of Nepal. Constitution of NAO</p>\r\n\r\n<p><strong>Regulation:</strong></p>\r\n\r\n<p>The regulating body for Nepalese Optometrists is Nepal Health Professionals Council (NHPC).</p>\r\n\r\n<p><a href=\"https://nhpc.gov.np/\" rel=\"nofollow\" target=\"_blank\">https://nhpc.gov.np/</a></p>\r\n\r\n<p><strong>Members:</strong></p>\r\n\r\n<p>NAO has over 250 members dully registered so far. Membership can be general, affiliate or honorary</p>\r\n\r\n<p><strong>Role of NAO:</strong></p>\r\n\r\n<ul>\r\n	<li>representation of optometrists and their interests to government and other bodies;</li>\r\n	<li>practice management;</li>\r\n	<li>financial, marketing and legal services</li>\r\n	<li>information and services to the public</li>\r\n</ul>\r\n\r\n<p><strong>Executive Body of NAO:</strong></p>\r\n\r\n<p>An 9 membered executive body is formed through Annual General Meeting (AGM) of the association. The body has a tenure of 3 &nbsp;years.</p>', NULL, '2023-02-21 17:13:50', '2023-02-21 17:13:59');
+(12, 2, 'Special Committee', 'special-committee', 1, NULL, NULL, '<p>test</p>', '<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>', NULL, '2023-05-01 02:12:49', '2023-05-01 03:18:35');
 
 -- --------------------------------------------------------
 
@@ -110,7 +110,7 @@ CREATE TABLE `admins` (
 --
 
 INSERT INTO `admins` (`id`, `name`, `username`, `email`, `password`, `gender`, `role`, `status`, `login_status`, `deleted_at`, `created_at`, `updated_at`) VALUES
-(1, 'Admin', 'admin', 'admin@gmail.com', '$2y$10$8KEGVoDM62j37KaG2OJvx.QeMlOhL/ZJP8ZWB4NsGK/2wQf4OAQue', 'male', 'superadmin', 0, 1, NULL, '2023-02-20 07:01:29', '2023-02-21 15:17:26'),
+(1, 'Admin', 'admin', 'admin@gmail.com', '$2y$10$8KEGVoDM62j37KaG2OJvx.QeMlOhL/ZJP8ZWB4NsGK/2wQf4OAQue', 'male', 'superadmin', 0, 1, NULL, '2023-02-20 07:01:29', '2023-05-01 02:09:14'),
 (2, 'user', 'user', 'user@gmail.com', '$2y$10$DdDH6QP1g2WNti1QleFhduni.ulWJdl6yCwk8N6mJ84JMZ7wFLUKu', 'male', 'admin', 0, 0, NULL, '2023-02-20 07:01:29', '2023-02-20 07:01:29');
 
 -- --------------------------------------------------------
@@ -147,6 +147,15 @@ CREATE TABLE `awards` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `awards`
+--
+
+INSERT INTO `awards` (`id`, `menu_id`, `title`, `slug`, `status`, `meta_title`, `meta_description`, `intro_text`, `description`, `image`, `created_at`, `updated_at`) VALUES
+(22, 7, 'Travel grant award', 'travel-grant-award', 1, 'Travel grant award', 'Travel grant award', NULL, '<p>Travel grant award</p>', NULL, '2023-03-04 09:23:00', '2023-03-04 09:23:00'),
+(23, 7, 'Recipient of the travel grant award till date', 'recipient-of-the-travel-grant-award-till-date', 1, 'Recipient of the travel grant award till date', 'Recipient of the travel grant award till date', NULL, '<p>We are pleased to congratulate the receipeints of Nepalese Association of Optometrists travel grants receipents who received to support their travel to international conferences and forums in 2019</p>\r\n\r\n<p><strong>The receipents are</strong></p>\r\n\r\n<ol>\r\n	<li>Arun Dhungana (Optometrist, Nepal Eye Hospital) USD 150&nbsp; Travel to AMICON , New Delhi</li>\r\n	<li>Anish Kharal ( Optometrist, Kathmandu Eye Centre) USD 300&nbsp; Travel to Asia Pacific Optometry Congress Phillipines</li>\r\n	<li>Dr. Gyan Bahadur Basnet ( Optometrist, Himalaya Eye Hospital, Pokhaka University) USD 300 travel to Asia Pacific Optometric Congress Phillipines</li>\r\n	<li>Niraj Dev Joshi (Optometrist, Institute of Medicine) USD 300 Travel to Americal Academy of Optometry / World Council of Optometry Conference Orlando USA</li>\r\n	<li>Raju Kaiti (Optometrist, Nepal Eye Hospital )&nbsp; USD 150&nbsp; Travel to International Conference on Medical and Health, Royal University of Bhutan, Thimpu, Bhutan</li>\r\n</ol>\r\n\r\n<p>These travel grants are distributed to&nbsp; members of Nepalese Association of Optometrists. We encourage our members to apply for travel grants for the conferences approved by our Association.</p>', 'uploads/awards/6326bd57ea82e1550ed7e3690ea44453.jpg', '2023-03-04 09:23:57', '2023-03-13 06:11:08'),
+(24, 7, 'Apply for travel grant', 'apply-for-travel-grant', 1, NULL, NULL, NULL, NULL, NULL, '2023-03-12 15:30:52', '2023-03-12 15:30:52');
 
 -- --------------------------------------------------------
 
@@ -199,6 +208,13 @@ CREATE TABLE `conferences` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `conferences`
+--
+
+INSERT INTO `conferences` (`id`, `menu_id`, `title`, `slug`, `status`, `date`, `end_date`, `meta_title`, `meta_description`, `intro_text`, `description`, `image`, `link`, `created_at`, `updated_at`) VALUES
+(2, NULL, 'First annual conference', 'first-annual-conference', 1, '2023-05-10', '2023-05-12', NULL, NULL, NULL, '<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>', '0', NULL, '2023-05-01 02:14:30', '2023-05-01 02:14:30');
 
 -- --------------------------------------------------------
 
@@ -275,7 +291,8 @@ CREATE TABLE `content_types` (
 --
 
 INSERT INTO `content_types` (`id`, `title`, `slug`, `description`, `status`, `image`, `created_at`, `updated_at`) VALUES
-(1, 'welcome', 'welcome', '<h3>Optometry</h3>\r\n<p>The World Council of Optometry (WCO) defines optometry as &ldquo;A healthcare profession that is autonomous, educated and regulated (licensed/ registered), and optometrists are the primary healthcare practitioners of the eye and visual system who provide comprehensive eye and vision care, which includes refraction and dispensing, detection/diagnosis and management of disease in the eye, and the rehabilitation of conditions of the visual system.&ldquo;1</p>\r\n\r\n<h3>Optometry in Nepal</h3>\r\n<p>Optometry education began in Nepal in 1997 with the establishment of a Bachelor of Optometry program at the Institute of Medicine, Tribhuvan University.2;<br />\r\nSince the inception of the optometry program in Nepal, the growth in optometry is minimal due to several challenges. In many settings, the optometrist&#39;s role is poorly recognized and is limited to providing refraction services. The reason for the poor recognition could be that optometrists are not currently providing a full spectrum of specialty services such as low vision rehabilitation, contact lens, and occupational lens design largely due to a lack of resources.3<br />\r\nPerhaps, providing specialized services would enable wider recognition of optometry as an independent profession among other healthcare professionals and the general public. Specialized optometric services, besides refraction, can be provided to fellow optometrists through training and workshops. The professional body should take responsibility for introducing specialized optometric services so that the standard of eye care would be optimum for the general public.<br />\r\nThe Nepalese Association of Optometrists (NAO) should initiate specific Continuing Professional Development (CPD) for general optometrists so that new techniques can be gradually introduced in practice.&nbsp;</p>\r\n\r\n<h3>Nepalese Association of Optometrists (NAO)</h3>\r\n<p>\r\nNepalese Association of Optometrists (NAO) was Established in 2004 AD, The Nepalese Association of Optometrists (NAO) is a not-for-profit NGO (Non-Governmental Organization) formed by the optometrist of Nepal. The Nepalese Association of Optometrists is registered as NGO in District Administration Office.</p>\r\n\r\n<h3>Scope of Optometric practice internationally</h3>\r\n<p>The scope of practice of the Optometry profession worldwide has continually evolved over the past centuries. The scope of practice in each nation can vary widely from that of its neighbors. The role of optometry in different countries is more variable than the roles of either ophthalmologists or opticians.</p>\r\n\r\n<p>Different disciplines have contributed to the development of Optometry&rsquo;s role in primary eye care, so today Optometrists diagnose, manage and treat a range of eye diseases and visual disorders, in addition to prescribing optical appliances such as spectacles and contact lenses.</p>\r\n\r\n<p>The role of Optometrists varies depending on local regulations. Optometrists in Australia, New Zealand, certain states of the USA, and the United Kingdom practice in a similar fashion. In many countries, Optometry is not a recognized profession with optical correction provided by Ophthalmic technicians or dispensing Opticians. In other countries such as regions of Europe, Optometry is restricted to the correction of refractive error and contact lens fitting, with Ophthalmology providing diagnosis and management of ocular pathology. However, Optometrists have expanded roles in some states of the USA and Canada where the scope of practice includes the prescription of oral medications, the delivery of laser procedures, and in a small number of states some minor surgical procedures (Harper et al. 2016; Kiely et al. 2017; Stein et al. 2018).&nbsp;</p>\r\n\r\n<p>In most countries, optometrists provide all the services except for surgery, foreign body removals, and treatment of disease with pharmaceutical drugs. Most optometrists, along with most ophthalmologists, provide vision therapy/orthoptics for the world. Optometry&#39;s role, as far as the use of diagnostic pharmaceuticals is concerned, is not as clear-cut. Only a few percent of responding countries&rsquo; optometrists use diagnostic pharmaceuticals. This scope of practice topic is still being debated in many countries. There appears to be a strong relationship between the likelihood of a profession being licensed/registered by a governmental agency and the responsibilities given to that profession.&nbsp;</p>\r\n\r\n<h3>Important Qualities for Optometrists</h3>\r\n<p>Decisionmaking skills:</strong> Optometrists must evaluate the results of a variety of diagnostic tests and decide on the best course of treatment for a patient.<br />\r\n<strong>Detail oriented:</strong> Optometrists must ensure that patients receive appropriate treatment and that medications and prescriptions are accurate. They must also monitor and record various pieces of information related to patient care.<br />\r\n<strong>Interpersonal skills:</strong> Optometrists spend most of their time examining patients, so they must be at ease interacting with patients and must make them feel comfortable during treatment.<br />\r\nSpeaking skills. Optometrists must clearly explain eye care instructions to their patients, as well as answer patients&#39; questions.</p>\r\n\r\n<h3>Duties of Optometrists</h3>\r\n<p>Optometrists typically do the following:</p>\r\n\r\n<ul>\r\n	<li>Perform vision tests and analyze results</li>\r\n	<li>Diagnose sight problems, such as nearsightedness or farsightedness, and eye diseases, such as glaucoma</li>\r\n	<li>Prescribe eyeglasses, contact lenses, and other visual aids, and if state law permits, medications</li>\r\n	<li>Perform minor surgical procedures to correct or treat visual or eye health issues</li>\r\n	<li>Provide treatments such as vision therapy or low-vision rehabilitation</li>\r\n	<li>Provide pre-and postoperative care to patients undergoing eye surgery&mdash;for example, examining a patient&#39;s eyes the day after surgery</li>\r\n	<li>Evaluate patients for the presence of other diseases and conditions, such as diabetes or hypertension, and refer patients to other healthcare providers as needed</li>\r\n	<li>Promote eye and general health by counseling patients</li>\r\n</ul>\r\n\r\n<h3>How to develop an adequate eye care workforce</h3>\r\n<p>To provide the world with the necessary eye care workforce, we need to do the following:</p>\r\n\r\n<ul>\r\n	<li>Governments need to recognize the optometry profession and legalize or regulate it as required.</li>\r\n	<li>More universities need to establish programs to train optometrists to support populations around the world.</li>\r\n	<li>Governments need to create a just working environment for optometrists with safe staffing levels and fair salaries.</li>\r\n	<li>Key members of eye-care teams should receive specific training to state and present the case for eye health succinctly.</li>\r\n</ul>\r\n\r\n<ol>\r\n	<li>World Council of Optometry . Who is an optometrist? St. Louis, US.: [Google Scholar]</li>\r\n	<li>Kandel H, Murthy G, Bascaran C. Human resources for refraction services in Central Nepal. Clin Exp Optom. 2015;98(4):335&ndash;41. [PubMed] [Google Scholar]</li>\r\n	<li>Kandel H. Situational Analysis of Refractive Error Services in the Central Region of Nepal. London: University of London; 2013.</li>\r\n	<li>Bleything WB. A perspective on the international optometry scene. J Optom Ed 1990; 16:4.&nbsp;</li>\r\n	<li>Pickwell D. The challenges of international optometry. J Am Optom Assoc 1984; 55(9):659-64.</li>\r\n	<li>Baldwin WR. Optometry worldwide: an educator&#39;s perspective. J Am Optom Assoc 1984; 55(9):677-80.</li>\r\n</ol>', 1, NULL, '2023-02-20 07:01:30', '2023-02-22 14:55:56');
+(1, 'welcome', 'welcome', '<h3>Optometry</h3>\r\n\r\n<p>The World Council of Optometry (WCO) defines optometry as &ldquo;A healthcare profession that is autonomous, educated and regulated (licensed/ registered), and optometrists are the primary healthcare practitioners of the eye and visual system who provide comprehensive eye and vision care, which includes refraction and dispensing, detection/diagnosis and management of disease in the eye, and the rehabilitation of conditions of the visual system.&ldquo;1</p>\r\n\r\n<h3>Optometry in Nepal</h3>\r\n\r\n<p>Optometry education began in Nepal in 1997 with the establishment of a Bachelor of Optometry program at the Institute of Medicine, Tribhuvan University.2;<br />\r\nSince the inception of the optometry program in Nepal, the growth in optometry is minimal due to several challenges. In many settings, the optometrist&#39;s role is poorly recognized and is limited to providing refraction services. The reason for the poor recognition could be that optometrists are not currently providing a full spectrum of specialty services such as low vision rehabilitation, contact lens, and occupational lens design largely due to a lack of resources.3<br />\r\nPerhaps, providing specialized services would enable wider recognition of optometry as an independent profession among other healthcare professionals and the general public. Specialized optometric services, besides refraction, can be provided to fellow optometrists through training and workshops. The professional body should take responsibility for introducing specialized optometric services so that the standard of eye care would be optimum for the general public.<br />\r\nThe Nepalese Association of Optometrists (NAO) should initiate specific Continuing Professional Development (CPD) for general optometrists so that new techniques can be gradually introduced in practice.&nbsp;</p>\r\n\r\n<h3>Nepalese Association of Optometrists (NAO)</h3>\r\n\r\n<p>Nepalese Association of Optometrists (NAO) was Established in 2004 AD, The Nepalese Association of Optometrists (NAO) is a not-for-profit NGO (Non-Governmental Organization) formed by the optometrist of Nepal. The Nepalese Association of Optometrists is registered as NGO in District Administration Office.</p>\r\n\r\n<h3>Scope of Optometric practice internationally</h3>\r\n\r\n<p>The scope of practice of the Optometry profession worldwide has continually evolved over the past centuries. The scope of practice in each nation can vary widely from that of its neighbors. The role of optometry in different countries is more variable than the roles of either ophthalmologists or opticians.</p>\r\n\r\n<p>Different disciplines have contributed to the development of Optometry&rsquo;s role in primary eye care, so today Optometrists diagnose, manage and treat a range of eye diseases and visual disorders, in addition to prescribing optical appliances such as spectacles and contact lenses.</p>\r\n\r\n<p>The role of Optometrists varies depending on local regulations. Optometrists in Australia, New Zealand, certain states of the USA, and the United Kingdom practice in a similar fashion. In many countries, Optometry is not a recognized profession with optical correction provided by Ophthalmic technicians or dispensing Opticians. In other countries such as regions of Europe, Optometry is restricted to the correction of refractive error and contact lens fitting, with Ophthalmology providing diagnosis and management of ocular pathology. However, Optometrists have expanded roles in some states of the USA and Canada where the scope of practice includes the prescription of oral medications, the delivery of laser procedures, and in a small number of states some minor surgical procedures (Harper et al. 2016; Kiely et al. 2017; Stein et al. 2018).&nbsp;</p>\r\n\r\n<p>In most countries, optometrists provide all the services except for surgery, foreign body removals, and treatment of disease with pharmaceutical drugs. Most optometrists, along with most ophthalmologists, provide vision therapy/orthoptics for the world. Optometry&#39;s role, as far as the use of diagnostic pharmaceuticals is concerned, is not as clear-cut. Only a few percent of responding countries&rsquo; optometrists use diagnostic pharmaceuticals. This scope of practice topic is still being debated in many countries. There appears to be a strong relationship between the likelihood of a profession being licensed/registered by a governmental agency and the responsibilities given to that profession.&nbsp;</p>\r\n\r\n<h3>Important Qualities for Optometrists</h3>\r\n\r\n<p>Decisionmaking skills: Optometrists must evaluate the results of a variety of diagnostic tests and decide on the best course of treatment for a patient.<br />\r\n<strong>Detail oriented:</strong> Optometrists must ensure that patients receive appropriate treatment and that medications and prescriptions are accurate. They must also monitor and record various pieces of information related to patient care.<br />\r\n<strong>Interpersonal skills:</strong> Optometrists spend most of their time examining patients, so they must be at ease interacting with patients and must make them feel comfortable during treatment.<br />\r\nSpeaking skills. Optometrists must clearly explain eye care instructions to their patients, as well as answer patients&#39; questions.</p>\r\n\r\n<h3>Duties of Optometrists</h3>\r\n\r\n<p>Optometrists typically do the following:</p>\r\n\r\n<ul>\r\n	<li>Perform vision tests and analyze results</li>\r\n	<li>Diagnose sight problems, such as nearsightedness or farsightedness, and eye diseases, such as glaucoma</li>\r\n	<li>Prescribe eyeglasses, contact lenses, and other visual aids, and if state law permits, medications</li>\r\n	<li>Perform minor surgical procedures to correct or treat visual or eye health issues</li>\r\n	<li>Provide treatments such as vision therapy or low-vision rehabilitation</li>\r\n	<li>Provide pre-and postoperative care to patients undergoing eye surgery&mdash;for example, examining a patient&#39;s eyes the day after surgery</li>\r\n	<li>Evaluate patients for the presence of other diseases and conditions, such as diabetes or hypertension, and refer patients to other healthcare providers as needed</li>\r\n	<li>Promote eye and general health by counseling patients</li>\r\n</ul>\r\n\r\n<h3>How to develop an adequate eye care workforce</h3>\r\n\r\n<p>To provide the world with the necessary eye care workforce, we need to do the following:</p>\r\n\r\n<ul>\r\n	<li>Governments need to recognize the optometry profession and legalize or regulate it as required.</li>\r\n	<li>More universities need to establish programs to train optometrists to support populations around the world.</li>\r\n	<li>Governments need to create a just working environment for optometrists with safe staffing levels and fair salaries.</li>\r\n	<li>Key members of eye-care teams should receive specific training to state and present the case for eye health succinctly.</li>\r\n</ul>\r\n\r\n<ol>\r\n	<li>World Council of Optometry . Who is an optometrist? St. Louis, US.: [Google Scholar]</li>\r\n	<li>Kandel H, Murthy G, Bascaran C. Human resources for refraction services in Central Nepal. Clin Exp Optom. 2015;98(4):335&ndash;41. [PubMed] [Google Scholar]</li>\r\n	<li>Kandel H. Situational Analysis of Refractive Error Services in the Central Region of Nepal. London: University of London; 2013.</li>\r\n	<li>Bleything WB. A perspective on the international optometry scene. J Optom Ed 1990; 16:4.&nbsp;</li>\r\n	<li>Pickwell D. The challenges of international optometry. J Am Optom Assoc 1984; 55(9):659-64.</li>\r\n	<li>Baldwin WR. Optometry worldwide: an educator&#39;s perspective. J Am Optom Assoc 1984; 55(9):677-80.</li>\r\n</ol>', 1, NULL, '2023-02-20 07:01:30', '2023-05-01 02:10:45'),
+(2, 'About Optometry', 'about-optometry', '<p><strong>History:</strong>&nbsp;Established in 2004, the Nepalese Association of Optometrists (NAO) is a not for profit national non government organization formed by the professionals in optometry from Nepal.</p>\r\n\r\n<p><strong>Registration:&nbsp;</strong>The association is formally registered to the chief district office of the government of Nepal. Constitution of NAO</p>\r\n\r\n<p><strong>Regulation:&nbsp;</strong>The regulating body for Nepalese Optometrists is Nepal Health Professionals Council (NHPC).</p>\r\n\r\n<p><a href=\"https://nhpc.gov.np/\" rel=\"nofollow\" target=\"_blank\">https://nhpc.gov.np/</a></p>\r\n\r\n<p><strong>Members:&nbsp;</strong>NAO has over 250 members dully registered so far. Membership can be general, affiliate or honorary</p>\r\n\r\n<p><strong>Role of NAO:</strong></p>\r\n\r\n<ul>\r\n	<li>representation of optometrists and their interests to government and other bodies;</li>\r\n	<li>practice management;</li>\r\n	<li>financial, marketing and legal services</li>\r\n	<li>information and services to the public</li>\r\n</ul>\r\n\r\n<p><strong>Executive Body of NAO:&nbsp;</strong>An 9 membered executive body is formed through Annual General Meeting (AGM) of the association. The body has a tenure of 3 &nbsp;years.</p>', 1, '0', '2023-04-24 21:22:24', '2023-04-25 05:59:06');
 
 -- --------------------------------------------------------
 
@@ -495,7 +512,8 @@ CREATE TABLE `galleries` (
 --
 
 INSERT INTO `galleries` (`id`, `title`, `slug`, `status`, `created_at`, `updated_at`) VALUES
-(1, 'Events by NAO', 'events-by-nao', 0, '2023-02-22 08:59:11', '2023-02-22 08:59:11');
+(1, 'Events by NAO', 'events-by-nao', 0, '2023-02-22 08:59:11', '2023-02-22 08:59:11'),
+(2, 'test', 'test', 0, '2023-05-01 03:37:39', '2023-05-01 03:37:39');
 
 -- --------------------------------------------------------
 
@@ -583,18 +601,18 @@ CREATE TABLE `menus` (
 --
 
 INSERT INTO `menus` (`id`, `name`, `slug`, `order`, `url`, `icon`, `is_active`, `created_at`, `updated_at`) VALUES
-(1, 'home', 'home', 1, 'home', '', 1, '2023-02-20 07:01:29', '2023-02-20 07:01:29'),
-(2, 'about us', 'about-us', 2, 'about-us', '', 1, '2023-02-20 07:01:29', '2023-02-20 07:01:29'),
-(3, 'activities', 'activities', 3, 'activities', '', 1, '2023-02-20 07:01:29', '2023-02-20 07:01:29'),
-(4, 'publication', 'publication', 4, 'publication', '', 1, '2023-02-20 07:01:29', '2023-02-20 07:01:29'),
-(5, 'conference', 'conference', 5, 'conference', '', 1, '2023-02-20 07:01:29', '2023-02-20 07:01:29'),
-(6, 'our projects', 'our-projects', 6, 'conference', '', 1, '2023-02-20 07:01:29', '2023-02-20 07:01:29'),
-(7, 'awards', 'awards', 7, 'conference', '', 0, '2023-02-20 07:01:29', '2023-02-20 07:01:29'),
-(8, 'financial reports & funding', 'financial-reports-funding', 8, 'financial-reports-funding', '', 1, '2023-02-20 07:01:29', '2023-02-20 07:01:29'),
-(9, 'gallery', 'gallery', 9, 'gallery', '', 1, '2023-02-20 07:01:29', '2023-02-20 07:01:29'),
-(10, 'video', 'video', 10, 'video', '', 1, '2023-02-20 07:01:29', '2023-02-20 07:01:29'),
-(11, 'rewards', 'rewards', 11, 'rewards', '', 1, '2023-02-20 07:01:29', '2023-02-20 07:01:29'),
-(12, 'Travel Grant ', 'travel-grant', 12, 'travel-grant ', '', 1, '2023-02-20 07:01:29', '2023-02-20 07:01:29'),
+(1, 'Home', 'home', 1, 'home', NULL, 1, '2023-02-20 07:01:29', '2023-04-24 21:14:40'),
+(2, 'About us', 'about-us', 2, 'about-us', NULL, 1, '2023-02-20 07:01:29', '2023-04-24 21:14:51'),
+(3, 'Activities', 'activities', 3, 'activities', NULL, 1, '2023-02-20 07:01:29', '2023-04-24 21:15:18'),
+(4, 'Publication', 'publication', 4, 'publication', NULL, 1, '2023-02-20 07:01:29', '2023-04-24 21:15:28'),
+(5, 'Conference', 'conference', 5, 'conference', NULL, 1, '2023-02-20 07:01:29', '2023-04-24 21:15:39'),
+(6, 'Our Projects', 'our-projects', 6, 'conference', NULL, 1, '2023-02-20 07:01:29', '2023-04-24 21:15:52'),
+(7, 'Awards', 'awards', 7, 'conference', NULL, 1, '2023-02-20 07:01:29', '2023-04-24 21:16:06'),
+(8, 'Financial Reports & Funding', 'financial-reports-funding', 8, 'financial-reports-funding', NULL, 1, '2023-02-20 07:01:29', '2023-04-24 21:16:26'),
+(9, 'Gallery', 'gallery', 9, 'gallery', NULL, 1, '2023-02-20 07:01:29', '2023-04-24 21:16:35'),
+(10, 'Video', 'video', 10, 'video', NULL, 0, '2023-02-20 07:01:29', '2023-04-24 21:16:46'),
+(11, 'rewards', 'rewards', 11, 'rewards', '', 0, '2023-02-20 07:01:29', '2023-02-20 07:01:29'),
+(12, 'Travel Grant ', 'travel-grant', 12, 'travel-grant ', '', 0, '2023-02-20 07:01:29', '2023-02-20 07:01:29'),
 (13, 'Events', 'events', 13, 'events', NULL, 0, '2023-02-22 07:47:53', '2023-02-22 07:50:41');
 
 -- --------------------------------------------------------
@@ -1631,6 +1649,31 @@ INSERT INTO `publication_files` (`id`, `name`, `file`, `publication_id`, `create
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `register_travel_grants`
+--
+
+CREATE TABLE `register_travel_grants` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `reason` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `date` date NOT NULL DEFAULT '2023-03-05',
+  `venue` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `expected_grant` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `membership_number` int(11) NOT NULL,
+  `grant_status` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `register_travel_grants`
+--
+
+INSERT INTO `register_travel_grants` (`id`, `reason`, `date`, `venue`, `expected_grant`, `membership_number`, `grant_status`, `created_at`, `updated_at`) VALUES
+(1, 'test', '2023-03-18', 'asd', '2323', 222, 'apply_for_elsewhere', '2023-03-18 14:05:53', '2023-03-18 14:05:53');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `rewards`
 --
 
@@ -1797,6 +1840,10 @@ CREATE TABLE `users` (
   `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `date_of_birth` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `account_status` enum('pending','active','suspended','deleted') COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'pending',
+  `voucher_file` varchar(200) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `voucher_status` enum('pending','approved','rejected') COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'pending',
+  `password_reset_token` varchar(60) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `is_password_reset` tinyint(1) NOT NULL DEFAULT '0',
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -1805,8 +1852,12 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `membership_type_id`, `name`, `email`, `gender`, `phone`, `password`, `date_of_birth`, `account_status`, `created_at`, `updated_at`) VALUES
-(1, 1, 'Shailendra Basnet', 'shailendra.basnet@gmail.com', 'male', '9801169141', '$2y$10$BxZXzYzopE7/yszhxQWBDOmwjSA7jw2LYNhduZz9an/1F9RhPVeju', '1980-01-03', 'pending', '2023-02-28 07:37:33', '2023-02-28 07:37:33');
+INSERT INTO `users` (`id`, `membership_type_id`, `name`, `email`, `gender`, `phone`, `password`, `date_of_birth`, `account_status`, `voucher_file`, `voucher_status`, `password_reset_token`, `is_password_reset`, `created_at`, `updated_at`) VALUES
+(1, 1, 'Shailendra Basnet', 'shailendra.basnet@gmail.com', 'male', '9801169141', '$2y$10$BxZXzYzopE7/yszhxQWBDOmwjSA7jw2LYNhduZz9an/1F9RhPVeju', '1980-01-03', 'active', 'public/users/voucher/otAeCxtcwSR7O55d3vNk9mlBs7sqGvwDBWggwi3j.jpg', 'pending', 'xdXPTtEFZNexLZWwM7mA97wrq0C7a4FEbWDXfQMPDTIaFpa0dSUg9dMuP2cS', 0, '2023-02-28 07:37:33', '2023-04-04 12:39:34'),
+(2, 1, 'Prashant Khanal', 'prashantkhanal379@gmail.com', 'male', '9814785699', '$2y$10$.8.ArBayEBWCroceYUrYm.RUsULd3wMNjfs0W5EeTIjYqEOoQVxqW', '1997-01-17', 'pending', NULL, 'pending', NULL, 0, '2023-03-15 10:49:27', '2023-03-15 10:49:27'),
+(3, 1, 'pratiksha khatiwada', 'pratikshakhatiwada06@gmail.com', 'female', '+9779866470624', '$2y$10$eyi4Rd2vH5vH25LA86u5qObgqMbxz481qaZPFC8wS.AY/8IU3URJa', '1999-11-11', 'pending', NULL, 'pending', NULL, 0, '2023-03-15 11:55:38', '2023-03-15 11:55:38'),
+(4, 1, 'ram dhital', 'eprabidhi@gmail.com', 'male', '9851105974', '$2y$10$8Sct3E3CKwi5FSPjVo3rFOZq5SUNNnfZTbx27iMKKSSlz4ohmtpFK', '2023-05-01', 'active', 'public/users/voucher/nHj5rd0QEiTODagcpAKz7mqY2BdR7tzfBRoMoxs4.jpg', 'pending', NULL, 0, '2023-05-01 01:09:48', '2023-05-01 02:04:37'),
+(5, 2, 'Santosh Shrestha', 'n@gmail.com', 'male', '78997979897', 'testing', '2023-04-04', 'pending', NULL, 'pending', NULL, 0, '2023-05-01 03:43:16', '2023-05-01 04:25:57');
 
 -- --------------------------------------------------------
 
@@ -1836,7 +1887,11 @@ CREATE TABLE `user_addresses` (
 --
 
 INSERT INTO `user_addresses` (`id`, `user_id`, `permanent_country`, `permanent_province`, `permanent_district`, `permanent_municipality`, `permanent_tole`, `temporary_country`, `temporary_province`, `temporary_district`, `temporary_municipality`, `temporary_tole`, `created_at`, `updated_at`) VALUES
-(1, 1, 1, 3, 28, 62, NULL, NULL, NULL, NULL, NULL, NULL, '2023-02-28 07:37:49', '2023-02-28 07:37:49');
+(1, 1, 1, 3, 28, 62, NULL, NULL, NULL, NULL, NULL, NULL, '2023-02-28 07:37:49', '2023-02-28 07:37:49'),
+(2, 2, 1, 3, 28, 54, NULL, NULL, NULL, NULL, NULL, NULL, '2023-03-15 10:50:03', '2023-03-15 10:50:03'),
+(3, 3, 1, 3, 27, 444, 'galchhi', NULL, NULL, NULL, NULL, NULL, '2023-03-15 11:56:06', '2023-03-15 11:56:06'),
+(4, 4, 1, 1, 6, 47, NULL, 1, 1, 1, 43, NULL, '2023-05-01 01:10:15', '2023-05-01 02:02:51'),
+(5, 5, 1, 2, 17, 82, NULL, NULL, NULL, NULL, NULL, NULL, '2023-05-01 04:26:25', '2023-05-01 04:26:25');
 
 -- --------------------------------------------------------
 
@@ -1864,7 +1919,10 @@ CREATE TABLE `user_documents` (
 --
 
 INSERT INTO `user_documents` (`id`, `user_id`, `front_size`, `back_size`, `image`, `citizenship_no`, `qualification`, `year_of_graduation`, `university`, `date_of_registration`, `created_at`, `updated_at`) VALUES
-(1, 1, 'uploads/users/8a85336c0b35685e74b5e0a978e1cdff.jpg', 'uploads/users/80c9ea4c9c426557bccb48515232870b.jpg', NULL, NULL, NULL, NULL, NULL, '2023-02-20', '2023-02-28 07:38:32', '2023-02-28 07:38:32');
+(1, 1, 'uploads/users/8a85336c0b35685e74b5e0a978e1cdff.jpg', 'uploads/users/80c9ea4c9c426557bccb48515232870b.jpg', NULL, NULL, NULL, NULL, NULL, '2023-02-20', '2023-02-28 07:38:32', '2023-02-28 07:38:32'),
+(2, 3, 'uploads/users/7b8e73dcdf91b951420f5a7ea8d4ce76.jpg', 'uploads/users/a94461983c3e3b3e351d10bc85cec9b9.jpg', NULL, NULL, NULL, NULL, NULL, '2023-02-20', '2023-03-15 11:56:42', '2023-03-15 11:56:42'),
+(3, 4, 'uploads/users/feb9de474967b6dbedec55c7bb819240.jpg', 'uploads/users/ac37bbcbdb93875ddf55beb25ea9e12f.jpg', 'uploads/users/2c33a5f391fb37f9c7c54611592c8df7.jpg', '123132', 'Masters', '2023-05-02', 'test', '2023-02-20', '2023-05-01 01:10:46', '2023-05-01 02:03:53'),
+(4, 5, 'uploads/users/349355f284e32b27e8d0729fb8c0f04e.jpg', 'uploads/users/e672a935df6527bb0e66771ad723b92e.png', 'uploads/users/3ed6c4b480d52354b9bc0751cdd1d6ab.jpg', NULL, NULL, NULL, NULL, '2023-02-20', '2023-05-01 04:29:01', '2023-05-01 04:29:01');
 
 -- --------------------------------------------------------
 
@@ -2100,6 +2158,12 @@ ALTER TABLE `publication_files`
   ADD KEY `publication_files_publication_id_foreign` (`publication_id`);
 
 --
+-- Indexes for table `register_travel_grants`
+--
+ALTER TABLE `register_travel_grants`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `rewards`
 --
 ALTER TABLE `rewards`
@@ -2179,7 +2243,7 @@ ALTER TABLE `user_payments`
 -- AUTO_INCREMENT for table `abouts`
 --
 ALTER TABLE `abouts`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `activities`
@@ -2203,7 +2267,7 @@ ALTER TABLE `admin_galleries`
 -- AUTO_INCREMENT for table `awards`
 --
 ALTER TABLE `awards`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `banners`
@@ -2215,7 +2279,7 @@ ALTER TABLE `banners`
 -- AUTO_INCREMENT for table `conferences`
 --
 ALTER TABLE `conferences`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `conference_forms`
@@ -2233,7 +2297,7 @@ ALTER TABLE `contents`
 -- AUTO_INCREMENT for table `content_types`
 --
 ALTER TABLE `content_types`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `countries`
@@ -2251,7 +2315,7 @@ ALTER TABLE `districts`
 -- AUTO_INCREMENT for table `events`
 --
 ALTER TABLE `events`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `f_r_a_f_s`
@@ -2263,7 +2327,7 @@ ALTER TABLE `f_r_a_f_s`
 -- AUTO_INCREMENT for table `galleries`
 --
 ALTER TABLE `galleries`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `gallery_images`
@@ -2344,6 +2408,12 @@ ALTER TABLE `publication_files`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
+-- AUTO_INCREMENT for table `register_travel_grants`
+--
+ALTER TABLE `register_travel_grants`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `rewards`
 --
 ALTER TABLE `rewards`
@@ -2371,19 +2441,19 @@ ALTER TABLE `travel_grant_forms`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `user_addresses`
 --
 ALTER TABLE `user_addresses`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `user_documents`
 --
 ALTER TABLE `user_documents`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `user_payments`
